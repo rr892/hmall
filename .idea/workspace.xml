@@ -204,7 +204,7 @@
       <workItem from="1775873067047" duration="7237000" />
       <workItem from="1775894564533" duration="7135000" />
       <workItem from="1775911634508" duration="611000" />
-      <workItem from="1775992715324" duration="1828000" />
+      <workItem from="1775992715324" duration="2229000" />
     </task>
     <task id="LOCAL-00001" summary="微服务商城，利用nacos完成动态路由功能">
       <option name="closed" value="true" />
@@ -230,11 +230,30 @@
       <option name="project" value="LOCAL" />
       <updated>1775994613966</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="微服务商城，利用nacos完成动态路由功能">
+      <option name="closed" value="true" />
+      <created>1775994880245</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1775994880245</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="微服务商城，利用nacos完成动态路由功能" />
