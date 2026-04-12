@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="024d86d5-c56a-4cf5-88fc-f2305aa7cb09" name="Changes" comment="微服务商城，利用nacos完成动态路由功能">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="024d86d5-c56a-4cf5-88fc-f2305aa7cb09" name="Changes" comment="微服务商城，利用nacos完成动态路由功能" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -206,7 +204,7 @@
       <workItem from="1775873067047" duration="7237000" />
       <workItem from="1775894564533" duration="7135000" />
       <workItem from="1775911634508" duration="611000" />
-      <workItem from="1775992715324" duration="1176000" />
+      <workItem from="1775992715324" duration="1586000" />
     </task>
     <task id="LOCAL-00001" summary="微服务商城，利用nacos完成动态路由功能">
       <option name="closed" value="true" />
