@@ -29,7 +29,6 @@ import java.util.concurrent.Executor;
 @Component
 @RequiredArgsConstructor
 public class DynamicRouteLoader {
-
     private final String dataId = "gateway-routes.json";
     private final String group = "DEFAULT_GROUP";
     private final NacosConfigManager nacosConfigManager;
