@@ -1,0 +1,14 @@
+server:
+  port: 8085
+hm:
+  swagger:
+    title: 黑马商城用户服务接口文档
+    package: com.hmall.user.controller
+  db:
+    database: hm-user
+  jwt:
+    location: classpath:hmall.jks
+    alias: hmall
+    password: hmall123
+    tokenTTL: 30m
+# keytool -genkeypair -alias hmall -keyalg RSA -keypass hmall123 -keystore hmall.jks -storepass hmall123
