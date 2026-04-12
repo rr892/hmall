@@ -51,7 +51,7 @@ public class DynamicRouteLoader {
                 updateConfigInfo(configInfo);
             }
         });
-        // 2.首次启动，更新配置信息
+        // 2.首次启动，设置路由配置信息
         updateConfigInfo(configInfo);
     }
 
