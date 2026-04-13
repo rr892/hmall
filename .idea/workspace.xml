@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="024d86d5-c56a-4cf5-88fc-f2305aa7cb09" name="Changes" comment="更改动态路由功能注释">
+    <list default="true" id="024d86d5-c56a-4cf5-88fc-f2305aa7cb09" name="Changes" comment="完成sentinel的引入和基本配置">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cart-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart-service/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/target/classes/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart-service/target/classes/com/hmall/cart/service/impl/CartServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/target/classes/com/hmall/cart/service/impl/CartServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-gateway/target/classes/com/hmall/gateway/route/DynamicRouteLoader$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/hm-gateway/target/classes/com/hmall/gateway/route/DynamicRouteLoader$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-gateway/target/classes/com/hmall/gateway/route/DynamicRouteLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/hm-gateway/target/classes/com/hmall/gateway/route/DynamicRouteLoader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-api/src/main/java/com/hmall/api/client/ItemClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/hm-api/src/main/java/com/hmall/api/client/ItemClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-api/src/main/java/com/hmall/api/config/DefaultFeignConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/hm-api/src/main/java/com/hmall/api/config/DefaultFeignConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/item-service/src/main/java/com/hmall/item/controller/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/item-service/src/main/java/com/hmall/item/controller/ItemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/item-service/target/classes/com/hmall/item/controller/ItemController.class" beforeDir="false" afterPath="$PROJECT_DIR$/item-service/target/classes/com/hmall/item/controller/ItemController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/cart-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/cart-service/spring.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/gateway/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/gateway/spring.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/item-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/item-service/spring.log" afterDir="false" />
@@ -219,7 +218,7 @@
       <workItem from="1775894564533" duration="7135000" />
       <workItem from="1775911634508" duration="611000" />
       <workItem from="1775992715324" duration="7416000" />
-      <workItem from="1776082884623" duration="536000" />
+      <workItem from="1776082884623" duration="4665000" />
     </task>
     <task id="LOCAL-00001" summary="微服务商城，利用nacos完成动态路由功能">
       <option name="closed" value="true" />
@@ -285,7 +284,15 @@
       <option name="project" value="LOCAL" />
       <updated>1775995832809</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="完成sentinel的引入和基本配置">
+      <option name="closed" value="true" />
+      <created>1776083518974</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1776083518974</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -305,7 +312,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="微服务商城，利用nacos完成动态路由功能" />
     <MESSAGE value="更改动态路由功能注释" />
-    <option name="LAST_COMMIT_MESSAGE" value="更改动态路由功能注释" />
+    <MESSAGE value="完成sentinel的引入和基本配置" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成sentinel的引入和基本配置" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
