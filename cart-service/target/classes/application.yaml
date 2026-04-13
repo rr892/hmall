@@ -9,3 +9,9 @@ hm:
     package: com.hmall.cart.controller
   db:
     database: hm-cart
+spring:
+  cloud:
+    sentinel:
+      transport:
+        dashboard: localhost:8090  # sentinel控制台 和服务连接拉取配置到服务
+      http-method-specify: true # 开启请求方式前缀

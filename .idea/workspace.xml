@@ -4,8 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="024d86d5-c56a-4cf5-88fc-f2305aa7cb09" name="Changes" comment="微服务商城，利用nacos完成动态路由功能">
-      <change beforePath="$PROJECT_DIR$/hm-gateway/src/main/java/com/hmall/gateway/route/DynamicRouteLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/hm-gateway/src/main/java/com/hmall/gateway/route/DynamicRouteLoader.java" afterDir="false" />
+    <list default="true" id="024d86d5-c56a-4cf5-88fc-f2305aa7cb09" name="Changes" comment="更改动态路由功能注释">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/target/classes/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/target/classes/com/hmall/cart/service/impl/CartServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/target/classes/com/hmall/cart/service/impl/CartServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-gateway/target/classes/com/hmall/gateway/route/DynamicRouteLoader$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/hm-gateway/target/classes/com/hmall/gateway/route/DynamicRouteLoader$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-gateway/target/classes/com/hmall/gateway/route/DynamicRouteLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/hm-gateway/target/classes/com/hmall/gateway/route/DynamicRouteLoader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/cart-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/cart-service/spring.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/gateway/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/gateway/spring.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/item-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/item-service/spring.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/pay-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/pay-service/spring.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/trade-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/trade-service/spring.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/user-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/user-service/spring.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,47 +63,47 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Maven.hmall [clean].executor": "Run",
-    "Maven.hmall [package].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.CartApplication.executor": "Run",
-    "Spring Boot.GatewayApplication.executor": "Run",
-    "Spring Boot.HMallApplication.executor": "Run",
-    "Spring Boot.ItemApplication.executor": "Run",
-    "Spring Boot.ItemApplication2.executor": "Run",
-    "Spring Boot.ItemServiceApplication.executor": "Run",
-    "Spring Boot.PayApplication.executor": "Run",
-    "Spring Boot.TradeApplication.executor": "Run",
-    "Spring Boot.UserApplication.executor": "Run",
-    "jdk.selected.JAVA_MODULE": "21",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/heima/hmall/hmall/hm-gateway/src/main/resources",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "D:/heima/hmall/hmall/hm-gateway/src/main/java/com/hmall/gateway/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven.hmall [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.hmall [package].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.CartApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.GatewayApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.HMallApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ItemApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ItemApplication2.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ItemServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.PayApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.TradeApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.UserApplication.executor&quot;: &quot;Run&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;21&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/heima/hmall/hmall/hm-gateway/src/main/resources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;D:/heima/hmall/hmall/hm-gateway/src/main/java/com/hmall/gateway/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\heima\hmall\hmall\hm-gateway\src\main\resources" />
@@ -206,7 +218,8 @@
       <workItem from="1775873067047" duration="7237000" />
       <workItem from="1775894564533" duration="7135000" />
       <workItem from="1775911634508" duration="611000" />
-      <workItem from="1775992715324" duration="2542000" />
+      <workItem from="1775992715324" duration="7416000" />
+      <workItem from="1776082884623" duration="536000" />
     </task>
     <task id="LOCAL-00001" summary="微服务商城，利用nacos完成动态路由功能">
       <option name="closed" value="true" />
@@ -256,7 +269,23 @@
       <option name="project" value="LOCAL" />
       <updated>1775995495334</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="微服务商城，利用nacos完成动态路由功能">
+      <option name="closed" value="true" />
+      <created>1775995588420</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1775995588420</updated>
+    </task>
+    <task id="LOCAL-00008" summary="更改动态路由功能注释">
+      <option name="closed" value="true" />
+      <created>1775995832809</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1775995832809</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,7 +304,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="微服务商城，利用nacos完成动态路由功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="微服务商城，利用nacos完成动态路由功能" />
+    <MESSAGE value="更改动态路由功能注释" />
+    <option name="LAST_COMMIT_MESSAGE" value="更改动态路由功能注释" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
