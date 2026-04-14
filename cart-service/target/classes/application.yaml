@@ -3,15 +3,17 @@ server:
 feign:
   okhttp:
     enabled: true # 开启OKHttp连接池支持
+#  sentinel:
+#    enabled: true # 开启FallBack
 hm:
   swagger:
     title: 黑马商城购物车服务接口文档
     package: com.hmall.cart.controller
   db:
     database: hm-cart
-spring:
-  cloud:
-    sentinel:
-      transport:
-        dashboard: localhost:8090  # sentinel控制台 和服务连接拉取配置到服务
-      http-method-specify: true # 开启请求方式前缀
+#spring:
+#  cloud:
+#    sentinel:
+#      transport:
+#        dashboard: localhost:8090  # sentinel控制台 和服务连接拉取配置到服务
+#      http-method-specify: true # 开启请求方式前缀
