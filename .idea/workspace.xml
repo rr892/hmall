@@ -4,28 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="024d86d5-c56a-4cf5-88fc-f2305aa7cb09" name="Changes" comment="完成sentinel的请求限流、线程隔离、熔断和fallback功能">
+    <list default="true" id="024d86d5-c56a-4cf5-88fc-f2305aa7cb09" name="Changes" comment="完成seata的配置功能">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart-service/src/main/resources/bootstrap.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/src/main/resources/bootstrap.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart-service/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/target/classes/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart-service/target/classes/bootstrap.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/target/classes/bootstrap.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-api/target/classes/com/hmall/api/client/ItemClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/hm-api/target/classes/com/hmall/api/client/ItemClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-api/target/classes/com/hmall/api/config/DefaultFeignConfig$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/hm-api/target/classes/com/hmall/api/config/DefaultFeignConfig$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-api/target/classes/com/hmall/api/config/DefaultFeignConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/hm-api/target/classes/com/hmall/api/config/DefaultFeignConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/item-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/item-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/item-service/src/main/resources/bootstrap.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/item-service/src/main/resources/bootstrap.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/item-service/target/classes/bootstrap.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/item-service/target/classes/bootstrap.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/src/main/java/com/hmall/cart/service/impl/CartServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/src/main/java/com/hmall/cart/service/impl/CartServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/target/classes/com/hmall/cart/service/impl/CartServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/target/classes/com/hmall/cart/service/impl/CartServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/item-service/src/main/java/com/hmall/item/service/impl/ItemServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/item-service/src/main/java/com/hmall/item/service/impl/ItemServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/item-service/target/classes/com/hmall/item/service/impl/ItemServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/item-service/target/classes/com/hmall/item/service/impl/ItemServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/cart-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/cart-service/spring.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/gateway/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/gateway/spring.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/item-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/item-service/spring.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/pay-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/pay-service/spring.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/trade-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/trade-service/spring.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/user-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/user-service/spring.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trade-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/trade-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trade-service/src/main/resources/bootstrap.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/trade-service/src/main/resources/bootstrap.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trade-service/target/classes/bootstrap.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/trade-service/target/classes/bootstrap.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trade-service/src/main/java/com/hmall/trade/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/trade-service/src/main/java/com/hmall/trade/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trade-service/target/classes/com/hmall/trade/service/impl/OrderServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/trade-service/target/classes/com/hmall/trade/service/impl/OrderServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -238,7 +230,7 @@
       <workItem from="1776095593697" duration="1016000" />
       <workItem from="1776096627578" duration="10000" />
       <workItem from="1776135753374" duration="2027000" />
-      <workItem from="1776148891049" duration="2220000" />
+      <workItem from="1776148891049" duration="4032000" />
     </task>
     <task id="LOCAL-00001" summary="微服务商城，利用nacos完成动态路由功能">
       <option name="closed" value="true" />
@@ -328,7 +320,15 @@
       <option name="project" value="LOCAL" />
       <updated>1776089517052</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="完成seata的配置功能">
+      <option name="closed" value="true" />
+      <created>1776151412572</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1776151412572</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -350,7 +350,8 @@
     <MESSAGE value="更改动态路由功能注释" />
     <MESSAGE value="完成sentinel的引入和基本配置" />
     <MESSAGE value="完成sentinel的请求限流、线程隔离、熔断和fallback功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成sentinel的请求限流、线程隔离、熔断和fallback功能" />
+    <MESSAGE value="完成seata的配置功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成seata的配置功能" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
