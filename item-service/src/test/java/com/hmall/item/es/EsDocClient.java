@@ -2,10 +2,12 @@ package com.hmall.item.es;
 
 import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.json.JSONUtil;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.hmall.item.domain.po.Item;
 import com.hmall.item.domain.po.ItemDoc;
 import com.hmall.item.service.IItemService;
 import org.apache.http.HttpHost;
+import org.elasticsearch.action.bulk.BulkRequest;
 import org.elasticsearch.action.delete.DeleteRequest;
 import org.elasticsearch.action.get.GetRequest;
 import org.elasticsearch.action.get.GetResponse;
@@ -24,6 +26,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.io.IOException;
+import java.util.List;
 
 /**
  * @author 陈荣
@@ -110,6 +113,36 @@ public class EsDocClient {
         );
         // 3.发送请求
         client.update(request, RequestOptions.DEFAULT);
+    }
+
+    /**
+     * 批量导入商品数据
+     */
+    @Test
+    void testBulkDoc() throws IOException {
+        int pageN0 = 1, pageSize = 1000;
+        while (true){
+            // 1.查询商品数据
+            Page<Item> page = iItemService.lambdaQuery()
+                    .eq(Item::getStatus, 1)
+                    .page(new Page<Item>(pageN0, pageSize));
+            // 2.遍历数据
+            List<Item> items = page.getRecords();
+            if (items == null || items.isEmpty()){
+                return;
+            }
+            for (Item item : items) {
+                String json = JSONUtil.toJsonStr(BeanUtil.copyProperties(item, ItemDoc.class));
+                // 3.构建批量请求
+                BulkRequest request = new BulkRequest();
+                // 4.构建请求体
+                request.add(new IndexRequest("items").id(item.getId().toString()).source(json, XContentType.JSON));
+                // 5.发送请求
+                client.bulk(request, RequestOptions.DEFAULT);
+            }
+            // 6.下一页数据
+            pageN0++;
+        }
     }
 
     @AfterEach
