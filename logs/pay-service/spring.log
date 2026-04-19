@@ -1,39 +1,39 @@
-15:46:42:705  INFO 25788 --- [main] com.hmall.pay.PayApplication             : The following 1 profile is active: "local"
-15:46:43:247  INFO 25788 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=03b9c17c-4073-3eb5-a5ec-2097a0167056
-15:46:43:545  INFO 25788 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
-15:46:43:545  INFO 25788 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.25] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
-15:46:43:545  INFO 25788 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
-15:46:43:546  INFO 25788 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
-15:46:43:546  INFO 25788 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-15:46:43:550  INFO 25788 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
-15:46:43:556  INFO 25788 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-15:46:43:557  INFO 25788 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
-15:46:43:843  INFO 25788 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-15:46:43:843  INFO 25788 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1122 ms
-15:46:43:975  INFO 25788 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'user-service' URL not provided. Will try picking an instance via load-balancing.
-15:46:44:006  INFO 25788 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'trade-service' URL not provided. Will try picking an instance via load-balancing.
-15:46:45:475  INFO 25788 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-15:46:45:508  INFO 25788 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
-15:46:46:546  INFO 25788 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-15:46:46:635  INFO 25788 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 8f83c1ba-e451-42fe-b693-609f00398421
-15:46:46:635  INFO 25788 --- [main] com.alibaba.nacos.common.remote.client   : [8f83c1ba-e451-42fe-b693-609f00398421] RpcClient init label, labels = {module=naming, source=sdk}
-15:46:46:636  INFO 25788 --- [main] com.alibaba.nacos.common.remote.client   : [8f83c1ba-e451-42fe-b693-609f00398421] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
-15:46:46:636  INFO 25788 --- [main] com.alibaba.nacos.common.remote.client   : [8f83c1ba-e451-42fe-b693-609f00398421] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
-15:46:46:636  INFO 25788 --- [main] com.alibaba.nacos.common.remote.client   : [8f83c1ba-e451-42fe-b693-609f00398421] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
-15:46:46:636  INFO 25788 --- [main] com.alibaba.nacos.common.remote.client   : [8f83c1ba-e451-42fe-b693-609f00398421] Try to connect to server on start up, server: {serverIp = '192.168.147.136', server main port = 8848}
-15:46:46:785  INFO 25788 --- [main] com.alibaba.nacos.common.remote.client   : [8f83c1ba-e451-42fe-b693-609f00398421] Success to connect to server [192.168.147.136:8848] on start up, connectionId = 1776152806554_192.168.147.1_57573
-15:46:46:785  INFO 25788 --- [main] com.alibaba.nacos.common.remote.client   : [8f83c1ba-e451-42fe-b693-609f00398421] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
-15:46:46:785  INFO 25788 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [8f83c1ba-e451-42fe-b693-609f00398421] Notify connected event to listeners.
-15:46:46:785  INFO 25788 --- [main] com.alibaba.nacos.common.remote.client   : [8f83c1ba-e451-42fe-b693-609f00398421] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda/0x000001bfa25029e8
-15:46:46:814  INFO 25788 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
-15:46:46:822  INFO 25788 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP pay-service 192.168.172.1:8083 register finished
-15:46:47:363  INFO 25788 --- [nacos-grpc-client-executor-6] com.alibaba.nacos.common.remote.client   : [8f83c1ba-e451-42fe-b693-609f00398421] Receive server push request, request = NotifySubscriberRequest, requestId = 20
-15:46:47:366  INFO 25788 --- [nacos-grpc-client-executor-6] com.alibaba.nacos.common.remote.client   : [8f83c1ba-e451-42fe-b693-609f00398421] Ack server push request, request = NotifySubscriberRequest, requestId = 20
-15:46:47:839  INFO 25788 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-15:46:47:839  INFO 25788 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
-15:46:47:841  INFO 25788 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-15:46:47:856  INFO 25788 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-15:46:47:915  INFO 25788 --- [main] com.hmall.pay.PayApplication             : Started PayApplication in 8.498 seconds (JVM running for 9.089)
-15:46:47:919  INFO 25788 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=pay-service, group=DEFAULT_GROUP
-15:46:47:920  INFO 25788 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=pay-service.yaml, group=DEFAULT_GROUP
-15:46:47:920  INFO 25788 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=pay-service-local.yaml, group=DEFAULT_GROUP
+15:47:07:538  INFO 4396 --- [main] com.hmall.pay.PayApplication             : The following 1 profile is active: "local"
+15:47:08:186  INFO 4396 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=03b9c17c-4073-3eb5-a5ec-2097a0167056
+15:47:08:542  INFO 4396 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+15:47:08:543  INFO 4396 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.25] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+15:47:08:543  INFO 4396 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+15:47:08:543  INFO 4396 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+15:47:08:543  INFO 4396 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+15:47:08:548  INFO 4396 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+15:47:08:559  INFO 4396 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+15:47:08:559  INFO 4396 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+15:47:08:767  INFO 4396 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+15:47:08:767  INFO 4396 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1213 ms
+15:47:08:980  INFO 4396 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'user-service' URL not provided. Will try picking an instance via load-balancing.
+15:47:09:039  INFO 4396 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'trade-service' URL not provided. Will try picking an instance via load-balancing.
+15:47:10:900  INFO 4396 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+15:47:10:934  INFO 4396 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+15:47:11:997  INFO 4396 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+15:47:12:163  INFO 4396 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 8cbae598-ba4f-4904-8903-3c329a44c2fb
+15:47:12:163  INFO 4396 --- [main] com.alibaba.nacos.common.remote.client   : [8cbae598-ba4f-4904-8903-3c329a44c2fb] RpcClient init label, labels = {module=naming, source=sdk}
+15:47:12:165  INFO 4396 --- [main] com.alibaba.nacos.common.remote.client   : [8cbae598-ba4f-4904-8903-3c329a44c2fb] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+15:47:12:165  INFO 4396 --- [main] com.alibaba.nacos.common.remote.client   : [8cbae598-ba4f-4904-8903-3c329a44c2fb] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+15:47:12:165  INFO 4396 --- [main] com.alibaba.nacos.common.remote.client   : [8cbae598-ba4f-4904-8903-3c329a44c2fb] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+15:47:12:165  INFO 4396 --- [main] com.alibaba.nacos.common.remote.client   : [8cbae598-ba4f-4904-8903-3c329a44c2fb] Try to connect to server on start up, server: {serverIp = '192.168.147.136', server main port = 8848}
+15:47:12:294  INFO 4396 --- [main] com.alibaba.nacos.common.remote.client   : [8cbae598-ba4f-4904-8903-3c329a44c2fb] Success to connect to server [192.168.147.136:8848] on start up, connectionId = 1776584832099_192.168.147.1_53384
+15:47:12:294  INFO 4396 --- [main] com.alibaba.nacos.common.remote.client   : [8cbae598-ba4f-4904-8903-3c329a44c2fb] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+15:47:12:294  INFO 4396 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [8cbae598-ba4f-4904-8903-3c329a44c2fb] Notify connected event to listeners.
+15:47:12:294  INFO 4396 --- [main] com.alibaba.nacos.common.remote.client   : [8cbae598-ba4f-4904-8903-3c329a44c2fb] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda/0x00000145944f8fe8
+15:47:12:351  INFO 4396 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+15:47:12:375  INFO 4396 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP pay-service 192.168.172.1:8083 register finished
+15:47:12:866  INFO 4396 --- [nacos-grpc-client-executor-7] com.alibaba.nacos.common.remote.client   : [8cbae598-ba4f-4904-8903-3c329a44c2fb] Receive server push request, request = NotifySubscriberRequest, requestId = 7
+15:47:12:871  INFO 4396 --- [nacos-grpc-client-executor-7] com.alibaba.nacos.common.remote.client   : [8cbae598-ba4f-4904-8903-3c329a44c2fb] Ack server push request, request = NotifySubscriberRequest, requestId = 7
+15:47:13:386  INFO 4396 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+15:47:13:386  INFO 4396 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+15:47:13:388  INFO 4396 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+15:47:13:404  INFO 4396 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+15:47:13:471  INFO 4396 --- [main] com.hmall.pay.PayApplication             : Started PayApplication in 9.709 seconds (JVM running for 10.52)
+15:47:13:476  INFO 4396 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=pay-service, group=DEFAULT_GROUP
+15:47:13:476  INFO 4396 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=pay-service.yaml, group=DEFAULT_GROUP
+15:47:13:476  INFO 4396 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=pay-service-local.yaml, group=DEFAULT_GROUP

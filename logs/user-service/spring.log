@@ -1,46 +1,46 @@
-15:46:47:047  INFO 6556 --- [main] com.hmall.user.UserApplication           : The following 1 profile is active: "local"
-15:46:47:578  INFO 6556 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=35f2ec48-b36c-32bb-9581-3cc492c495f8
-15:46:47:863  INFO 6556 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
-15:46:47:863  INFO 6556 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.25] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
-15:46:47:863  INFO 6556 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
-15:46:47:863  INFO 6556 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
-15:46:47:863  INFO 6556 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-15:46:47:866  INFO 6556 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
-15:46:47:872  INFO 6556 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-15:46:47:872  INFO 6556 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
-15:46:47:993  INFO 6556 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-15:46:47:993  INFO 6556 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 922 ms
-15:46:49:801  INFO 6556 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-15:46:49:833  INFO 6556 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
-15:46:50:873  INFO 6556 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-15:46:50:991  INFO 6556 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of f0518c80-cfc3-4cbc-b242-be7f47a4aa6d
-15:46:50:991  INFO 6556 --- [main] com.alibaba.nacos.common.remote.client   : [f0518c80-cfc3-4cbc-b242-be7f47a4aa6d] RpcClient init label, labels = {module=naming, source=sdk}
-15:46:50:993  INFO 6556 --- [main] com.alibaba.nacos.common.remote.client   : [f0518c80-cfc3-4cbc-b242-be7f47a4aa6d] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
-15:46:50:993  INFO 6556 --- [main] com.alibaba.nacos.common.remote.client   : [f0518c80-cfc3-4cbc-b242-be7f47a4aa6d] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
-15:46:50:993  INFO 6556 --- [main] com.alibaba.nacos.common.remote.client   : [f0518c80-cfc3-4cbc-b242-be7f47a4aa6d] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
-15:46:50:993  INFO 6556 --- [main] com.alibaba.nacos.common.remote.client   : [f0518c80-cfc3-4cbc-b242-be7f47a4aa6d] Try to connect to server on start up, server: {serverIp = '192.168.147.136', server main port = 8848}
-15:46:51:111  INFO 6556 --- [main] com.alibaba.nacos.common.remote.client   : [f0518c80-cfc3-4cbc-b242-be7f47a4aa6d] Success to connect to server [192.168.147.136:8848] on start up, connectionId = 1776152810906_192.168.147.1_57583
-15:46:51:111  INFO 6556 --- [main] com.alibaba.nacos.common.remote.client   : [f0518c80-cfc3-4cbc-b242-be7f47a4aa6d] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
-15:46:51:111  INFO 6556 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [f0518c80-cfc3-4cbc-b242-be7f47a4aa6d] Notify connected event to listeners.
-15:46:51:111  INFO 6556 --- [main] com.alibaba.nacos.common.remote.client   : [f0518c80-cfc3-4cbc-b242-be7f47a4aa6d] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda/0x000001d881501af0
-15:46:51:142  INFO 6556 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
-15:46:51:152  INFO 6556 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP user-service 192.168.172.1:8085 register finished
-15:46:51:682  INFO 6556 --- [nacos-grpc-client-executor-6] com.alibaba.nacos.common.remote.client   : [f0518c80-cfc3-4cbc-b242-be7f47a4aa6d] Receive server push request, request = NotifySubscriberRequest, requestId = 22
-15:46:51:686  INFO 6556 --- [nacos-grpc-client-executor-6] com.alibaba.nacos.common.remote.client   : [f0518c80-cfc3-4cbc-b242-be7f47a4aa6d] Ack server push request, request = NotifySubscriberRequest, requestId = 22
-15:46:52:157  INFO 6556 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-15:46:52:157  INFO 6556 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
-15:46:52:158  INFO 6556 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-15:46:52:169  INFO 6556 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-15:46:52:226  INFO 6556 --- [main] com.hmall.user.UserApplication           : Started UserApplication in 8.436 seconds (JVM running for 9.007)
-15:46:52:231  INFO 6556 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=user-service.yaml, group=DEFAULT_GROUP
-15:46:52:231  INFO 6556 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=user-service-local.yaml, group=DEFAULT_GROUP
-15:46:52:231  INFO 6556 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=user-service, group=DEFAULT_GROUP
-15:47:00:783  INFO 6556 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-15:47:00:783  INFO 6556 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-15:47:00:785  INFO 6556 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-15:47:00:879  WARN 6556 --- [http-nio-8085-exec-1] c.b.m.c.t.support.ReflectLambdaMeta      : Unable to make field private final java.lang.Class java.lang.invoke.SerializedLambda.capturingClass accessible: module java.base does not "opens java.lang.invoke" to unnamed module @394df057
-15:47:00:888  INFO 6556 --- [http-nio-8085-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-15:47:01:157  INFO 6556 --- [http-nio-8085-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-15:47:01:164 DEBUG 6556 --- [http-nio-8085-exec-1] c.h.user.mapper.UserMapper.selectList    : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
-15:47:01:184 DEBUG 6556 --- [http-nio-8085-exec-1] c.h.user.mapper.UserMapper.selectList    : ==> Parameters: Jack(String)
-15:47:01:349 DEBUG 6556 --- [http-nio-8085-exec-1] c.h.user.mapper.UserMapper.selectList    : <==      Total: 1
+15:47:20:641  INFO 16164 --- [main] com.hmall.user.UserApplication           : The following 1 profile is active: "local"
+15:47:21:337  INFO 16164 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=35f2ec48-b36c-32bb-9581-3cc492c495f8
+15:47:21:763  INFO 16164 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+15:47:21:764  INFO 16164 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.25] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+15:47:21:764  INFO 16164 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+15:47:21:764  INFO 16164 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+15:47:21:764  INFO 16164 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+15:47:21:767  INFO 16164 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+15:47:21:775  INFO 16164 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+15:47:21:775  INFO 16164 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+15:47:21:943  INFO 16164 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+15:47:21:943  INFO 16164 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1283 ms
+15:47:23:980  INFO 16164 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+15:47:24:005  INFO 16164 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+15:47:25:049  INFO 16164 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+15:47:25:162  INFO 16164 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 1e95fa64-ab31-4cea-88bc-5b965b4e1553
+15:47:25:162  INFO 16164 --- [main] com.alibaba.nacos.common.remote.client   : [1e95fa64-ab31-4cea-88bc-5b965b4e1553] RpcClient init label, labels = {module=naming, source=sdk}
+15:47:25:162  INFO 16164 --- [main] com.alibaba.nacos.common.remote.client   : [1e95fa64-ab31-4cea-88bc-5b965b4e1553] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+15:47:25:164  INFO 16164 --- [main] com.alibaba.nacos.common.remote.client   : [1e95fa64-ab31-4cea-88bc-5b965b4e1553] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+15:47:25:164  INFO 16164 --- [main] com.alibaba.nacos.common.remote.client   : [1e95fa64-ab31-4cea-88bc-5b965b4e1553] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+15:47:25:164  INFO 16164 --- [main] com.alibaba.nacos.common.remote.client   : [1e95fa64-ab31-4cea-88bc-5b965b4e1553] Try to connect to server on start up, server: {serverIp = '192.168.147.136', server main port = 8848}
+15:47:25:284  INFO 16164 --- [main] com.alibaba.nacos.common.remote.client   : [1e95fa64-ab31-4cea-88bc-5b965b4e1553] Success to connect to server [192.168.147.136:8848] on start up, connectionId = 1776584845092_192.168.147.1_54594
+15:47:25:284  INFO 16164 --- [main] com.alibaba.nacos.common.remote.client   : [1e95fa64-ab31-4cea-88bc-5b965b4e1553] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+15:47:25:284  INFO 16164 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [1e95fa64-ab31-4cea-88bc-5b965b4e1553] Notify connected event to listeners.
+15:47:25:284  INFO 16164 --- [main] com.alibaba.nacos.common.remote.client   : [1e95fa64-ab31-4cea-88bc-5b965b4e1553] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda/0x000001d6014fd8f0
+15:47:25:339  INFO 16164 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+15:47:25:354  INFO 16164 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP user-service 192.168.172.1:8085 register finished
+15:47:25:906  INFO 16164 --- [nacos-grpc-client-executor-8] com.alibaba.nacos.common.remote.client   : [1e95fa64-ab31-4cea-88bc-5b965b4e1553] Receive server push request, request = NotifySubscriberRequest, requestId = 10
+15:47:25:911  INFO 16164 --- [nacos-grpc-client-executor-8] com.alibaba.nacos.common.remote.client   : [1e95fa64-ab31-4cea-88bc-5b965b4e1553] Ack server push request, request = NotifySubscriberRequest, requestId = 10
+15:47:26:368  INFO 16164 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+15:47:26:369  INFO 16164 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+15:47:26:374  INFO 16164 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+15:47:26:392  INFO 16164 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+15:47:26:452  INFO 16164 --- [main] com.hmall.user.UserApplication           : Started UserApplication in 9.365 seconds (JVM running for 10.079)
+15:47:26:457  INFO 16164 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=user-service.yaml, group=DEFAULT_GROUP
+15:47:26:457  INFO 16164 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=user-service-local.yaml, group=DEFAULT_GROUP
+15:47:26:457  INFO 16164 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=user-service, group=DEFAULT_GROUP
+15:48:07:909  INFO 16164 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:48:07:909  INFO 16164 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+15:48:07:909  INFO 16164 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+15:48:07:998  WARN 16164 --- [http-nio-8085-exec-1] c.b.m.c.t.support.ReflectLambdaMeta      : Unable to make field private final java.lang.Class java.lang.invoke.SerializedLambda.capturingClass accessible: module java.base does not "opens java.lang.invoke" to unnamed module @394df057
+15:48:08:008  INFO 16164 --- [http-nio-8085-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+15:48:08:259  INFO 16164 --- [http-nio-8085-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+15:48:08:264 DEBUG 16164 --- [http-nio-8085-exec-1] c.h.user.mapper.UserMapper.selectList    : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
+15:48:08:279 DEBUG 16164 --- [http-nio-8085-exec-1] c.h.user.mapper.UserMapper.selectList    : ==> Parameters: Jack(String)
+15:48:08:525 DEBUG 16164 --- [http-nio-8085-exec-1] c.h.user.mapper.UserMapper.selectList    : <==      Total: 1

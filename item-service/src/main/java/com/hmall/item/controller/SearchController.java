@@ -1,10 +1,7 @@
 package com.hmall.item.controller;
 
-import cn.hutool.core.util.StrUtil;
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.hmall.api.dto.ItemDTO;
 import com.hmall.common.domain.PageDTO;
-import com.hmall.item.domain.po.Item;
 import com.hmall.item.domain.query.ItemPageQuery;
 import com.hmall.item.service.IItemService;
 import io.swagger.annotations.Api;
@@ -25,6 +22,7 @@ public class SearchController {
     @ApiOperation("搜索商品")
     @GetMapping("/list")
     public PageDTO<ItemDTO> search(ItemPageQuery query) {
+        /** like 查询
         // 分页查询
         Page<Item> result = itemService.lambdaQuery()
                 .like(StrUtil.isNotBlank(query.getKey()), Item::getName, query.getKey())
@@ -35,5 +33,8 @@ public class SearchController {
                 .page(query.toMpPage("update_time", false));
         // 封装并返回
         return PageDTO.of(result, ItemDTO.class);
+         */
+        // es 查询
+        return itemService.searchByEs(query);
     }
 }
