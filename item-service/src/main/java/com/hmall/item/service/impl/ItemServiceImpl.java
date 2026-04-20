@@ -18,10 +18,15 @@ import com.hmall.common.exception.BizIllegalException;
 import com.hmall.common.utils.BeanUtils;
 import io.swagger.models.auth.In;
 import lombok.RequiredArgsConstructor;
+import org.elasticsearch.action.delete.DeleteRequest;
+import org.elasticsearch.action.index.IndexRequest;
 import org.elasticsearch.action.search.SearchRequest;
 import org.elasticsearch.action.search.SearchResponse;
+import org.elasticsearch.action.update.UpdateRequest;
 import org.elasticsearch.client.RequestOptions;
 import org.elasticsearch.client.RestHighLevelClient;
+import org.elasticsearch.cluster.metadata.MetadataIndexTemplateService;
+import org.elasticsearch.common.xcontent.XContentType;
 import org.elasticsearch.index.query.BoolQueryBuilder;
 import org.elasticsearch.index.query.QueryBuilders;
 import org.elasticsearch.search.SearchHit;
@@ -50,7 +55,7 @@ public class ItemServiceImpl extends ServiceImpl<ItemMapper, Item> implements II
     private final RestHighLevelClient restHighLevelClient;
 
     @Override
-    //@Transactional
+    @Transactional
     public void deductStock(List<OrderDetailDTO> items) {
         String sqlStatement = "com.hmall.item.mapper.ItemMapper.updateStock";
         boolean r = false;
@@ -127,6 +132,141 @@ public class ItemServiceImpl extends ServiceImpl<ItemMapper, Item> implements II
         return PageDTO.of(extracted(response, pageSize));
     }
 
+    /**
+     * 新增商品
+     * @param itemDTO
+     */
+    @Override
+    @Transactional
+    public void saveItem(ItemDTO itemDTO) {
+        // 1.写入数据库
+        Item item = BeanUtils.copyBean(itemDTO, Item.class);
+        save(item);
+        // 2.写es
+        indexEsItemByDoc(BeanUtil.copyProperties(item, ItemDoc.class));
+    }
+
+    /**
+     * 更新商品状态
+     * @param id
+     * @param status
+     */
+    @Override
+    @Transactional
+    public void updateItemStatus(Long id, Integer status) {
+        // 1.更新数据库
+        Item item = getById(id);
+        item.setStatus(status);
+        updateById(item);
+        // 2.更新后的状态
+        if (status == 1){
+            // 2.1正常添加进es
+            indexEsItemByDoc(BeanUtil.copyProperties(item, ItemDoc.class));
+        }
+        else {
+            // 2.2在es中删除
+            deleteEsItemById(id);
+        }
+    }
+
+    /**
+     * 更新商品
+     * @param itemDTO
+     */
+    @Override
+    @Transactional
+    public void updateItem(ItemDTO itemDTO) {
+        // 1.不允许修改商品状态，所以强制设置为null，更新时，就会忽略该字段
+        itemDTO.setStatus(null);
+        // 2.更新数据库
+        updateById(BeanUtils.copyBean(itemDTO, Item.class));
+        // 3.商品的状态
+        Item item = getById(itemDTO.getId());
+        // 4.更新es的商品数据
+        if (item.getStatus() == 1){
+            updateEsItemByDoc(BeanUtil.copyProperties(item, ItemDoc.class));
+        }
+    }
+
+    /**
+     * 删除商品
+     * @param id
+     */
+    @Override
+    @Transactional
+    public void deleteItemById(Long id) {
+        // 1.查询商品的状态
+        Integer status = getById(id).getStatus();
+        // 2.在数据库中删除商品
+        removeById(id);
+        // 3.在es中删除商品
+        if (status == 1){
+            deleteEsItemById(id);
+        }
+    }
+
+    /**
+     * 更新es中的商品数据
+     * @param itemDoc
+     */
+    private void updateEsItemByDoc(ItemDoc itemDoc) {
+        // 1。转换为JSON数据
+        String jsonStr = JSONUtil.toJsonStr(itemDoc);
+        // 2.构建请求
+        UpdateRequest request = new UpdateRequest("items", itemDoc.getId());
+        // 3.构建请求体商品数据
+        request.doc(jsonStr, XContentType.JSON);
+        // 4.发送请求
+        try {
+            restHighLevelClient.update(request, RequestOptions.DEFAULT);
+        } catch (IOException e) {
+            log.error("更新es中的商品数据失败！{}", e);
+            throw new RuntimeException(e);
+        }
+    }
+
+    /**
+     * 根据id删除es中的商品
+     * @param id
+     */
+    private void deleteEsItemById(Long id) {
+        // 1.构建请求
+        DeleteRequest request = new DeleteRequest("items").id(id.toString());
+        // 2.发送请求
+        try {
+            restHighLevelClient.delete(request, RequestOptions.DEFAULT);
+        } catch (IOException e) {
+            log.error("向es删除数据失败！{}", e);
+            throw new RuntimeException(e);
+        }
+    }
+
+    /**
+     * 添加商品数据到es
+     * @param itemDoc
+     */
+    private void indexEsItemByDoc(ItemDoc itemDoc) {
+        // 1.转换为JSON数据
+        String jsonStr = JSONUtil.toJsonStr(itemDoc);
+        // 2.构建请求
+        IndexRequest request = new IndexRequest("items").id(itemDoc.getId());
+        // 3.请求体商品数据
+        request.source(jsonStr, XContentType.JSON);
+        // 4.发送请求
+        try {
+            restHighLevelClient.index(request, RequestOptions.DEFAULT);
+        } catch (IOException e) {
+            log.error("向es添加数据失败！{}", e);
+            throw new RuntimeException(e);
+        }
+    }
+
+    /**
+     * 解析es查询的结果
+     * @param response
+     * @param pageSize
+     * @return
+     */
     private static Page<ItemDTO> extracted(SearchResponse response, Integer pageSize) {
         // 1.整体的结果
         SearchHits hits = response.getHits();

@@ -49,32 +49,25 @@ public class ItemController {
     @ApiOperation("新增商品")
     @PostMapping
     public void saveItem(@RequestBody ItemDTO item) {
-        // 新增
-        itemService.save(BeanUtils.copyBean(item, Item.class));
+        itemService.saveItem(item);
     }
 
     @ApiOperation("更新商品状态")
     @PutMapping("/status/{id}/{status}")
     public void updateItemStatus(@PathVariable("id") Long id, @PathVariable("status") Integer status){
-        Item item = new Item();
-        item.setId(id);
-        item.setStatus(status);
-        itemService.updateById(item);
+        itemService.updateItemStatus(id, status);
     }
 
     @ApiOperation("更新商品")
     @PutMapping
     public void updateItem(@RequestBody ItemDTO item) {
-        // 不允许修改商品状态，所以强制设置为null，更新时，就会忽略该字段
-        item.setStatus(null);
-        // 更新
-        itemService.updateById(BeanUtils.copyBean(item, Item.class));
+        itemService.updateItem(item);
     }
 
     @ApiOperation("根据id删除商品")
     @DeleteMapping("{id}")
     public void deleteItemById(@PathVariable("id") Long id) {
-        itemService.removeById(id);
+        itemService.deleteItemById(id);
     }
 
     @ApiOperation("批量扣减库存")
